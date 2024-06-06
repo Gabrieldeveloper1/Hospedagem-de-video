@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Clone</title>
+    <title>WhatsApp 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <!-- Seção de autenticação -->
-        <div id="authSection">
-            <h2>Login</h2>
-            <input type="text" id="usernameInput" placeholder="Nome de usuário">
-            <button onclick="enterChat()">Entrar</button>
+    <div class="container">
+        <!-- Seção de contatos -->
+        <div id="contacts">
+            <h2>Contatos</h2>
+            <ul id="contactList">
+                <!-- Os contatos serão preenchidos dinamicamente via JavaScript -->
+            </ul>
         </div>
 
-        <!-- Seção de chat -->
-        <div id="chatSection" style="display: none;">
-            <h2>Chat</h2>
-            <div id="messages"></div>
+        <!-- Seção de mensagens -->
+        <div id="messages">
+            <h2>Mensagens</h2>
+            <div id="messageList">
+                <!-- As mensagens serão preenchidas dinamicamente via JavaScript -->
+            </div>
             <input type="text" id="messageInput" placeholder="Digite sua mensagem...">
+            <input type="file" id="fileInput">
             <button onclick="sendMessage()">Enviar</button>
-            <input type="file" id="imageInput" accept="image/*">
-            <button onclick="sendImage()">Enviar Imagem</button>
-            <button onclick="startRecording()">Gravar Áudio</button>
-            <button onclick="sendAudio()">Enviar Áudio</button>
-            <button onclick="logout()">Sair</button>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
