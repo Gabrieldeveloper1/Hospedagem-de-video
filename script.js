@@ -1,7 +1,9 @@
 document.getElementById('uploadButton').addEventListener('click', () => {
+    console.log('Botão "Enviar Vídeo" clicado'); // Verificar se o evento está sendo acionado
+
     const file = document.getElementById('videoUpload').files[0];
     if (file) {
-        const storageRef = firebase.storage().ref('videos/' + file.name); // Correção aqui
+        const storageRef = firebase.storage().ref('videos/' + file.name);
         const uploadTask = storageRef.put(file);
 
         uploadTask.on('state_changed', 
