@@ -1,18 +1,3 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyDWJEnY187JF283iHKJa-K40ecK_4pcXwE",
-  authDomain: "hellohosting-video.firebaseapp.com",
-  databaseURL: "https://hellohosting-video-default-rtdb.firebaseio.com",
-  projectId: "hellohosting-video",
-  storageBucket: "hellohosting-video.appspot.com",
-  messagingSenderId: "248239237943",
-  appId: "1:248239237943:web:12a609b9d035badc4ec8b2",
-  measurementId: "G-SNYZZFCDXB"
-};
-
-const app = firebase.initializeApp(firebaseConfig);
-const storage = firebase.storage();
-const database = firebase.database();
-
 document.getElementById('uploadButton').addEventListener('click', () => {
     const file = document.getElementById('videoUpload').files[0];
     if (file) {
