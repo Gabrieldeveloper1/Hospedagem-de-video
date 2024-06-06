@@ -1,11 +1,12 @@
 const firebaseConfig = {
-    apiKey: "<Quando eu terminar de fazer isto ja vai esta privado!>",
-    authDomain: "<YOUR_FIREBASE_AUTH_DOMAIN>",
-    projectId: "<YOUR_FIREBASE_PROJECT_ID>",
-    storageBucket: "<YOUR_FIREBASE_STORAGE_BUCKET>",
-    messagingSenderId: "<YOUR_FIREBASE_MESSAGING_SENDER_ID>",
-    appId: "<YOUR_FIREBASE_APP_ID>",
-    databaseURL: "<YOUR_FIREBASE_DATABASE_URL>"
+  apiKey: "AIzaSyDWJEnY187JF283iHKJa-K40ecK_4pcXwE",
+  authDomain: "hellohosting-video.firebaseapp.com",
+  databaseURL: "https://hellohosting-video-default-rtdb.firebaseio.com",
+  projectId: "hellohosting-video",
+  storageBucket: "hellohosting-video.appspot.com",
+  messagingSenderId: "248239237943",
+  appId: "1:248239237943:web:12a609b9d035badc4ec8b2",
+  measurementId: "G-SNYZZFCDXB"
 };
 
 const app = firebase.initializeApp(firebaseConfig);
