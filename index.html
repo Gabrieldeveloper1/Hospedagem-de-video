@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Seção de autenticação -->
+        <div id="authSection">
+            <h2>Login</h2>
+            <input type="text" id="usernameInput" placeholder="Nome de usuário">
+            <button onclick="enterChat()">Entrar</button>
+        </div>
 
+        <!-- Seção de chat -->
+        <div id="chatSection" style="display: none;">
+            <h2>Chat</h2>
+            <div id="messages"></div>
+            <input type="text" id="messageInput" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage()">Enviar</button>
+            <input type="file" id="imageInput" accept="image/*">
+            <button onclick="sendImage()">Enviar Imagem</button>
+            <button onclick="startRecording()">Gravar Áudio</button>
+            <button onclick="sendAudio()">Enviar Áudio</button>
+            <button onclick="logout()">Sair</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
