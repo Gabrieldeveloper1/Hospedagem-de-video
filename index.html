@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hellohosting Video</title>
+    <title>HelloHosting Video</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Upload de Vídeo</h1>
         <input type="file" id="videoUpload" accept="video/*">
-        <video id="videoPlayer" controls></video>
+        <button id="uploadButton">Enviar Vídeo</button>
+        <p id="statusMessage"></p>
     </div>
     <script src="script.js"></script>
 </body>
