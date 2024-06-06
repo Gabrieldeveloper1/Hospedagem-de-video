@@ -1,1 +1,75 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Estilos para o chat */
+#messages {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#messages div {
+    margin-bottom: 5px;
+}
+
+#messageInput, #imageInput {
+    width: calc(100% - 80px);
+    margin-right: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+audio {
+    width: 100%;
+}
+
+/* Estilos para a seção de autenticação */
+#authSection {
+    text-align: center;
+}
+
+/* Estilos para a seção de chat */
+#chatSection {
+    display: none;
+}
+
+/* Estilos para a seção de chamada de voz */
+#callSection {
+    display: none;
+}
